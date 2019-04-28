@@ -9,6 +9,16 @@ of the given amount of money.
 In this way, the problem can be represented by a graph with N vertices, each line representing a link from the
 first currency to the second one, with a weight of 1 (because it does take 1 step to goes from a node to an other everytime).
 
+For instance, your example can be represented by the following graph :
+
+
+      CHF ----- AUD
+    /            |
+EUR --- USD     JPY--- INR
+                 |
+                KRW
+
+
 I used the Dijkstra algorithm in order to find the optimal path, then get the final result by computing a new amount of money 
 in the new currency at each iteration, going throught a node to an other.
 
