@@ -12,11 +12,11 @@ first currency to the second one, with a weight of 1 (because it does take 1 ste
 For instance, your example can be represented by the following graph :
 
 
-      CHF ----- AUD
-    /            |
-EUR --- USD     JPY--- INR
-                 |
-                KRW
+CHF ------------ AUD
+ |                |
+EUR --- USD      JPY--- INR
+                  |
+                 KRW
 
 
 I used the Dijkstra algorithm in order to find the optimal path, then get the final result by computing a new amount of money 
